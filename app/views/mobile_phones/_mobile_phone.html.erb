@@ -1,0 +1,17 @@
+<div class="col-sm-6 col-md-4">
+  <%= link_to mobile_phone, style: "text-decoration: none;" do %>
+  <div class="card mb-4 box-shadow">
+    <img class="card-img-top" src="<%= mobile_phone.avatar %>" onError="placeholder(this)">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #000;"><%= mobile_phone.highlighted_value_of(:name) %></h5>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li> ₹<%= number_with_delimiter(mobile_phone.price, :delimiter => ',') %> </li>
+        <li> <%= mobile_phone.ram %> GB RAM </li>
+        <li> <%= mobile_phone.screen_size %> inch Display </li>
+        <li> <%= mobile_phone.primary_camera %> Rear Camera </li>
+        <li> <%= mobile_phone.battery %> mAh Battery </li>
+      </ul>
+    </div>
+  </div>
+  <% end %>
+</div>
