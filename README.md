@@ -11,6 +11,7 @@ Setup the project & run the `rake db:seed` command to generate the fake data to 
 ## View Tip & Tricks - Partial
 https://github.com/rails/rails/blob/0c5552a3dd28e35cce64462765cc41c5355db0f1/actionpack/lib/action_view/renderer/partial_renderer.rb
 
+```
 # = Action View Partials
 #
 # There's also a convenience method for rendering sub templates within the current controller that depends on a
@@ -258,6 +259,7 @@ https://github.com/rails/rails/blob/0c5552a3dd28e35cce64462765cc41c5355db0f1/act
 #       Deadline: <%= user.deadline %>
 #     <%- end -%>
 #   <% end %>
+```
 
 ## How are Rails instance variables passed to views?
 https://github.com/rails/rails/blob/0c5552a3dd28e35cce64462765cc41c5355db0f1/actionpack/lib/abstract_controller/rendering.rb#L138-L145
